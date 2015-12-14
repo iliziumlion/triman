@@ -1,0 +1,358 @@
+@import "http://webfonts.ru/import/ptsans.css";
+@import "http://webfonts.ru/import/intro.css";
+@import "http://webfonts.ru/import/caviar.css";
+@import "http://webfonts.ru/import/roboto.css";
+body {
+  font-family: 'PT Sans'; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #454545; }
+
+h1 {
+  font-family: 'Intro'; }
+
+h2 {
+  font-family: 'Intro'; }
+
+h3 {
+  font-family: 'Intro'; }
+
+h4 {
+  font-family: 'Caviar Dreams'; }
+
+p {
+  font-family: 'PT Sans'; }
+
+a {
+  font-family: 'PT Sans'; }
+
+ol, ul {
+  margin-bottom: 0px;
+  margin-top: 0px; }
+
+#header {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #fff;
+  color: #454545;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
+  #header .logo {
+    font-family: 'Intro';
+    font-weight: 0; }
+    #header .logo a {
+      text-decoration: none; }
+      #header .logo a h3 {
+        margin-top: 10px;
+        color: #6187ce;
+        font-family: 'Intro'; }
+  #header h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #305499;
+    font-weight: 300;
+    font-family: 'Roboto'; }
+  #header h3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #305499;
+    font-weight: 600;
+    font-family: 'Roboto'; }
+  #header .form-control {
+    border-radius: 2px 0 0 2px;
+    height: 32px; }
+  #header .btn {
+    border-radius: 0 2px 2px 0;
+    color: #454545;
+    background: rgba(255, 193, 43, 0.93);
+    border: none;
+    padding: 6px 20px; }
+  #header .ion-ios-email {
+    font-size: 24px;
+    line-height: 25px;
+    position: relative;
+    top: 4px;
+    color: #2d5b9f; }
+  #header .ion-ios-telephone {
+    font-size: 24px;
+    line-height: 25px;
+    position: relative;
+    top: 1px;
+    color: #2d5b9f; }
+  #header h6 {
+    color: #454545;
+    font-family: 'Caviar Dreams';
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  #header .ion-ios-cart {
+    font-size: 32px;
+    line-height: 25px;
+    position: relative;
+    top: 7px;
+    font-weight: 900; }
+  #header .cart {
+    margin-top: 20px; }
+    #header .cart .bit {
+      opacity: 1;
+      transform: translateX(0px);
+      transition: all 0.3s ease-in-out; }
+      #header .cart .bit.carting {
+        opacity: 1;
+        transform: translateX(0px); }
+    #header .cart a {
+      color: #454545; }
+      #header .cart a:hover {
+        color: #4e78c7; }
+  @media (min-widht: 320px) {
+    #header .cont {
+      float: right; } }
+
+.navbar {
+  margin-bottom: 0px;
+  min-height: 0px; }
+  .navbar .navbar-toggle {
+    float: left;
+    padding: 0px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+    .navbar .navbar-toggle .ion-android-menu {
+      font-size: 32px; }
+
+.nav > li > a {
+  color: #333;
+  padding: 10px 10px;
+  font-weight: 600; }
+  .nav > li > a:focus {
+    background-color: transparent !important;
+    text-decoration: underline;
+    color: #305499; }
+  .nav > li > a:hover {
+    background-color: transparent !important;
+    text-decoration: underline;
+    color: #305499; }
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: transparent !important;
+  border-color: transparent !important; }
+
+.ser {
+  padding-left: 60px;
+  padding-top: 5px; }
+
+.social {
+  margin-top: 20px; }
+
+.form-control:focus {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+.slider-pro {
+  font-family: 'Caviar Dreams'; }
+
+.slider {
+  background: #333;
+  min-height: 100px;
+  max-height: 400px; }
+
+/* Example 3 */
+#example3 .sp-selected-thumbnail {
+  border: 4px solid #000; }
+
+.links {
+  text-align: center;
+  margin-top: 10px; }
+
+#index-content {
+  padding: 3rem 0 6rem;
+  background: #f5f5f5; }
+  #index-content .title-h h1 {
+    margin-bottom: 3rem;
+    font-family: 'Intro';
+    font-weight: 0; }
+  #index-content .title-gend {
+    margin-top: 100px; }
+  #index-content .tovars h4 {
+    margin-bottom: 1em; }
+  #index-content .tovars .tovar {
+    min-height: 320px;
+    z-index: auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    background: #fff;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 3px rgba(119, 119, 119, 0.2);
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    opacity: 0;
+    transition: all 0.3s ease-in-out; }
+    #index-content .tovars .tovar select .cs-skin-slide .cs-options li span .color-box {
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      border: 1px solid #333;
+      border-radius: 50%;
+      display: inline-block;
+      content: ''; }
+    #index-content .tovars .tovar.is-showing {
+      opacity: 1;
+      transform: translateX(0px); }
+    #index-content .tovars .tovar:hover .img-tov img {
+      transform: scale(1.5); }
+    #index-content .tovars .tovar figcaption {
+      position: absolute;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 5px 15px;
+      bottom: 0px;
+      z-index: 999;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      overflow: visible; }
+      #index-content .tovars .tovar figcaption h5 {
+        margin-bottom: 0px;
+        font-family: 'PT Sans';
+        font-weight: 300;
+        color: #333; }
+      #index-content .tovars .tovar figcaption h3 {
+        font-family: 'Caviar Dreams';
+        font-weight: 600;
+        color: #6187ce;
+        margin-top: 10px; }
+      #index-content .tovars .tovar figcaption p {
+        font-size: 13px;
+        padding-top: 2px;
+        padding-bottom: 0px;
+        color: #305499;
+        font-family: 'PT Sans'; }
+    #index-content .tovars .tovar .img-tov {
+      overflow: hidden;
+      display: inline-block;
+      min-height: 310px;
+      width: 100%;
+      position: absolute; }
+      #index-content .tovars .tovar .img-tov img {
+        min-width: 150px;
+        max-width: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        margin: 0px auto;
+        position: absolute;
+        top: 25px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out; }
+
+#company {
+  padding: 3em 0 6em;
+  background: #f5f5f5; }
+  #company h1 {
+    margin-bottom: 30px; }
+  #company h2 {
+    font-family: 'Caviar Dreams';
+    padding: 20px 0 10px 40px;
+    font-weight: 600; }
+
+#contacts {
+  padding: 3em 0 6em;
+  background: #f5f5f5; }
+  #contacts h1 {
+    margin-bottom: 30px; }
+  #contacts h2 {
+    font-family: 'Caviar Dreams';
+    font-weight: 600; }
+  #contacts #map {
+    border: 5px solid #305499;
+    border-radius: 4px; }
+  #contacts .maps {
+    height: 350px; }
+  #contacts .adress {
+    padding: 2em 0 1em;
+    font-family: 'Roboto'; }
+  #contacts .write {
+    padding: 0em 0 1em; }
+    #contacts .write h2 {
+      padding-bottom: 10px; }
+  #contacts .form-control {
+    border-radius: 2px;
+    border: 1px solid #999999;
+    color: #333;
+    font-family: 'Roboto'; }
+  #contacts .btn-primary {
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2px;
+    margin-top: 30px;
+    font-family: 'Roboto'; }
+
+footer {
+  background: #2c2c2c;
+  position: relative;
+  padding: 3em 0rem 4em;
+  color: gray; }
+  footer ul.nav-stacked li a {
+    color: gray;
+    padding: 0 15px;
+    font-size: 16px; }
+    footer ul.nav-stacked li a:hover {
+      color: #b3b3b3;
+      text-decoration: none; }
+  footer .cont .icon {
+    font-size: 24px;
+    color: #b3b3b3; }
+  footer .cont h3, footer .cont h5 {
+    font-family: 'Caviar Dreams';
+    color: #b3b3b3;
+    cursor: pointer; }
+    footer .cont h3:hover, footer .cont h5:hover {
+      color: #fff; }
+  footer .cont h5 {
+    position: relative;
+    bottom: 3px;
+    font-size: 20px; }
+  footer .form-control {
+    border-radius: 2px 0 0 2px;
+    background: #454545;
+    border: 1px solid #454545;
+    height: 32px;
+    color: #ababab; }
+    footer .form-control:hover {
+      border: 1px solid #787878; }
+    footer .form-control:active {
+      border: 1px solid #787878; }
+    footer .form-control:focus {
+      border: 1px solid #787878; }
+  footer .btn {
+    border-radius: 0 2px 2px 0;
+    color: #fff;
+    background: rgba(255, 193, 43, 0.93);
+    border: none;
+    padding: 6px 20px; }
+    footer .btn:hover {
+      background: rgba(255, 193, 43, 0.9);
+      color: #fff;
+      padding: 6px 20px; }
+  footer .logo h2 {
+    color: #6187ce;
+    font-size: 36px; }
+  footer h3 {
+    color: #999999; }
+
+#copyright {
+  background: #262626;
+  padding: 10px 0px 10px; }
+  #copyright h5 {
+    color: #999999; }
