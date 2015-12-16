@@ -22,6 +22,9 @@ $opacity: transparent !important;
 body {
 	font-family: 'PT Sans';
 }
+.out {
+	background: url('../img/brushed_alu.png');
+}
 h1,h2,h3,h4,h5,h6 {color: $pale-sky;}
 
 h1 {font-family: 'Intro';}
@@ -44,8 +47,11 @@ ol, ul {
 	z-index: 999;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	.logo {
-		font-family: 'Intro';
-		font-weight: 0;
+		img {
+			width: 100%;
+			max-width: 170px;
+		}
+		
 		a {
 			text-decoration: none;
 			h3 {
@@ -64,7 +70,7 @@ ol, ul {
 		font-family: 'Roboto';
 	}
 	h3 {
-		margin-top: 20px;
+		margin-top: 0px;
 		margin-bottom: 0px;
 		color: $blue;
 		font-weight: 600;
@@ -110,7 +116,7 @@ ol, ul {
 		font-weight: 900;
 	}
 	.cart {
-		margin-top: 20px;
+		margin-top: 10px;
 		.bit {
 			opacity: 1;
 			transform: translateX(0px);
@@ -135,6 +141,7 @@ ol, ul {
 }
 .navbar {
 	margin-bottom: 0px;
+	margin-top: 30px;
 	min-height: 0px;
 	
 	.navbar-toggle {
@@ -169,11 +176,12 @@ ol, ul {
 	border-color: $opacity;
 }
 .ser {
-	padding-left: 60px;
+	padding-left: 100px;
 	padding-top: 5px;
 }
 .social {
 	margin-top: 20px;
+	padding-left: 50px 
 }
 .form-control:focus {
 	border: 1px solid rgba(0,0,0,0.2);
@@ -309,6 +317,156 @@ ol, ul {
 		}
 	}
 }
+
+#catalog {
+	padding: 3em 0 3em;
+	background: #f5f5f5;
+	h1 {
+		margin-bottom: 0px;
+	}
+	.title-h {
+		margin-bottom: 15px;
+	}
+	.nav-catalog {
+		background: $white;
+		margin-bottom: 20px;
+		@include border-radius(4px);
+		box-shadow: 0px 0px 3px rgba(35, 58, 80, 0.2);
+		border: 1px solid rgba(128, 128, 128, 0.3);
+		padding: 20px 15px 30px;
+		.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+			background: $opacity;
+		}
+		ul.nav-stacked {
+			
+			li {
+				margin: 5px 0;
+				a {
+					color: $black;
+					padding: 0 15px;
+					font-size: 14px;
+					font-weight: 600;
+					text-decoration: none;
+					display: block;
+				}
+			}
+			ul {
+				padding-left: 0px;
+				margin-bottom: 20px;
+				li {
+					text-decoration: none;
+					list-style: none;
+					padding-left: 30px;
+				}
+				a {
+					font-size: 16px;
+					border-bottom: 1px dotted;
+					color: lighten($black, 15);
+					padding: 0;
+					border-radius: 0px;
+					display: initial;
+					font-weight: 300;
+					&:hover {
+						color: $blue;
+						
+					}
+				}
+			}
+		}
+	}
+	.katalog {
+		.tovar {
+			min-height: 320px;
+			z-index: auto;
+			@include border-radius(4px);
+			position: relative;
+			background: $white;
+			margin-bottom: 2em;
+			box-shadow: 0px 0px 3px rgba(119, 119, 119, 0.2);
+			border: 1px solid rgba(128, 128, 128, 0.3);
+			transition: all 0.3s ease-in-out; 
+			select {
+				.cs-skin-slide .cs-options li span .color-box {
+					width: 40px;
+					height: 40px;
+					background: #fff;
+					border: 1px solid #333;
+					border-radius: 50%;
+					display: inline-block;
+					content: '';
+				}
+			}
+			
+			&.is-showing {
+				opacity: 1;
+				transform: translateX(0px);
+			}
+			&:hover {
+				.img-tov {
+					img{
+						transform: scale(1.5);
+					}
+				}
+			}
+			figcaption {
+				position: absolute;
+				display: inline-block;
+				background: rgba(255, 255, 255, 0.95);
+				padding: 5px 15px;
+				//right: -100%;
+				bottom: 0px;
+				z-index: 999;
+				width: 100%;
+				transition: all 0.3s ease-in-out;
+				overflow: visible;
+				h5 {
+					margin-bottom: 0px;
+					font-family: 'PT Sans';
+					font-weight: 300;
+					color: $black;
+				}
+				h3 {
+					font-family: 'Caviar Dreams';
+					font-weight: 600;
+					color: lighten($blue, 20);
+					margin-top: 10px;
+				}
+				p {
+					font-size: 13px;
+					padding-top: 2px;
+					padding-bottom: 0px;
+					color: $blue;
+					font-family: 'PT Sans';
+				}
+			}
+			.img-tov {
+				overflow: hidden;
+				display: inline-block;
+				min-height: 310px;
+				width: 100%;
+				position: absolute;
+				img {	
+					min-width: 150px;	
+					max-width: 200px;	
+					padding-left: 5px;
+					padding-right: 5px;	
+					width: 100%;
+					margin: 0px auto;
+					position: absolute;
+					top: 25px;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					z-index: 1;
+					display: block;
+					transform: scale(1);
+					transition: all 0.3s ease-in-out; 
+				}
+			}
+		}
+	}
+}
+
 
 #company {
 	padding: 3em 0 6em;

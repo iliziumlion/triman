@@ -5,6 +5,9 @@
 body {
   font-family: 'PT Sans'; }
 
+.out {
+  background: url("../img/brushed_alu.png"); }
+
 h1, h2, h3, h4, h5, h6 {
   color: #454545; }
 
@@ -38,15 +41,15 @@ ol, ul {
   position: relative;
   z-index: 999;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
-  #header .logo {
-    font-family: 'Intro';
-    font-weight: 0; }
-    #header .logo a {
-      text-decoration: none; }
-      #header .logo a h3 {
-        margin-top: 10px;
-        color: #6187ce;
-        font-family: 'Intro'; }
+  #header .logo img {
+    width: 100%;
+    max-width: 170px; }
+  #header .logo a {
+    text-decoration: none; }
+    #header .logo a h3 {
+      margin-top: 10px;
+      color: #6187ce;
+      font-family: 'Intro'; }
   #header h5 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -55,7 +58,7 @@ ol, ul {
     font-weight: 300;
     font-family: 'Roboto'; }
   #header h3 {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 0px;
     color: #305499;
     font-weight: 600;
@@ -94,7 +97,7 @@ ol, ul {
     top: 7px;
     font-weight: 900; }
   #header .cart {
-    margin-top: 20px; }
+    margin-top: 10px; }
     #header .cart .bit {
       opacity: 1;
       transform: translateX(0px);
@@ -112,6 +115,7 @@ ol, ul {
 
 .navbar {
   margin-bottom: 0px;
+  margin-top: 30px;
   min-height: 0px; }
   .navbar .navbar-toggle {
     float: left;
@@ -141,11 +145,12 @@ ol, ul {
   border-color: transparent !important; }
 
 .ser {
-  padding-left: 60px;
+  padding-left: 100px;
   padding-top: 5px; }
 
 .social {
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-left: 50px; }
 
 .form-control:focus {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -239,6 +244,126 @@ ol, ul {
       width: 100%;
       position: absolute; }
       #index-content .tovars .tovar .img-tov img {
+        min-width: 150px;
+        max-width: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        margin: 0px auto;
+        position: absolute;
+        top: 25px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out; }
+
+#catalog {
+  padding: 3em 0 3em;
+  background: #f5f5f5; }
+  #catalog h1 {
+    margin-bottom: 0px; }
+  #catalog .title-h {
+    margin-bottom: 15px; }
+  #catalog .nav-catalog {
+    background: #fff;
+    margin-bottom: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px rgba(35, 58, 80, 0.2);
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 20px 15px 30px; }
+    #catalog .nav-catalog .nav-pills > li.active > a, #catalog .nav-catalog .nav-pills > li.active > a:focus, #catalog .nav-catalog .nav-pills > li.active > a:hover {
+      background: transparent !important; }
+    #catalog .nav-catalog ul.nav-stacked li {
+      margin: 5px 0; }
+      #catalog .nav-catalog ul.nav-stacked li a {
+        color: #333;
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        display: block; }
+    #catalog .nav-catalog ul.nav-stacked ul {
+      padding-left: 0px;
+      margin-bottom: 20px; }
+      #catalog .nav-catalog ul.nav-stacked ul li {
+        text-decoration: none;
+        list-style: none;
+        padding-left: 30px; }
+      #catalog .nav-catalog ul.nav-stacked ul a {
+        font-size: 16px;
+        border-bottom: 1px dotted;
+        color: #595959;
+        padding: 0;
+        border-radius: 0px;
+        display: initial;
+        font-weight: 300; }
+        #catalog .nav-catalog ul.nav-stacked ul a:hover {
+          color: #305499; }
+  #catalog .katalog .tovar {
+    min-height: 320px;
+    z-index: auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    background: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 3px rgba(119, 119, 119, 0.2);
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    transition: all 0.3s ease-in-out; }
+    #catalog .katalog .tovar select .cs-skin-slide .cs-options li span .color-box {
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      border: 1px solid #333;
+      border-radius: 50%;
+      display: inline-block;
+      content: ''; }
+    #catalog .katalog .tovar.is-showing {
+      opacity: 1;
+      transform: translateX(0px); }
+    #catalog .katalog .tovar:hover .img-tov img {
+      transform: scale(1.5); }
+    #catalog .katalog .tovar figcaption {
+      position: absolute;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 5px 15px;
+      bottom: 0px;
+      z-index: 999;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      overflow: visible; }
+      #catalog .katalog .tovar figcaption h5 {
+        margin-bottom: 0px;
+        font-family: 'PT Sans';
+        font-weight: 300;
+        color: #333; }
+      #catalog .katalog .tovar figcaption h3 {
+        font-family: 'Caviar Dreams';
+        font-weight: 600;
+        color: #6187ce;
+        margin-top: 10px; }
+      #catalog .katalog .tovar figcaption p {
+        font-size: 13px;
+        padding-top: 2px;
+        padding-bottom: 0px;
+        color: #305499;
+        font-family: 'PT Sans'; }
+    #catalog .katalog .tovar .img-tov {
+      overflow: hidden;
+      display: inline-block;
+      min-height: 310px;
+      width: 100%;
+      position: absolute; }
+      #catalog .katalog .tovar .img-tov img {
         min-width: 150px;
         max-width: 200px;
         padding-left: 5px;
